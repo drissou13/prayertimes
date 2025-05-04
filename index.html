@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Horaires de Prière – Marseille</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="prayer-decor">
+    <div class="sky">
+      <div class="moon"></div>
+      <div class="mosque"></div>
+    </div>
+  </div>
+
+  <h1>Horaires de Prière – Marseille</h1>
+
+  <label>
+    <input type="checkbox" id="toggle-sound" checked>
+    Activer le son
+  </label>
+
+  <p id="date">Chargement...</p>
+  <p id="next-prayer">Calcul en cours...</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Heure</th>
+      </tr>
+    </thead>
+    <tbody id="prayer-times"></tbody>
+  </table>
+
+  <audio id="adhan-audio" src="https://media.sd.ma/assabile/adhan_3435370/495dea4f4ea5.mp3" preload="auto"></audio>
+  <audio id="notif-audio" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
